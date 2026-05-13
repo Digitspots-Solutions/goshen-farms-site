@@ -1,0 +1,42 @@
+{
+  "businessName": "Goshen Farms",
+  "industry": "Agricultural Manufacturing",
+  "tone": "professional and trustworthy",
+  "tagline": "Cultivating Quality, Delivering Excellence",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Goshen Farms - Your Trusted Partner in Agricultural Excellence. Located in the heart of Udenu, we are committed to delivering premium agricultural products manufactured with the highest standards of quality and sustainability.",
+      "imagePrompt": "Photorealistic aerial view of a modern agricultural farm in rural Nigeria, lush green farmland stretching to the horizon, organized crop rows, modern processing facilities in the background, golden hour lighting, vibrant green vegetation, red earth paths, professional agricultural setting in Enugu State Nigeria",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Goshen Farms is a leading agricultural manufacturing enterprise strategically located in Udenu, Enugu State. Situated opposite Obollo International Hotel along the Obollo-Nsukka Express Way, we combine traditional farming wisdom with modern manufacturing techniques to produce exceptional agricultural products. Our commitment to quality, innovation, and customer satisfaction has positioned us as a trusted name in Nigeria's agricultural sector. We take pride in supporting local communities while maintaining international standards in all our operations.",
+      "imagePrompt": "Professional interior shot of a modern agricultural processing facility in Nigeria, clean stainless steel equipment, workers in white protective gear and hairnets sorting fresh produce, quality control stations, bright natural lighting through large windows, organized and hygienic environment, Nigerian agricultural workers engaged in careful production",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Products & Services",
+      "copy": "At Goshen Farms, we specialize in the manufacturing and processing of high-quality agricultural products. Our state-of-the-art facilities enable us to maintain strict quality control from farm to finished product. We serve retailers, distributors, and institutional clients across Nigeria with reliable supply chains and competitive pricing. Our manufacturing capabilities include processing, packaging, and distribution of agricultural commodities that meet both local and international quality standards. We are committed to sustainable farming practices that protect our environment while delivering superior products to our customers.",
+      "imagePrompt": "Vibrant display of packaged agricultural products in a modern Nigerian facility, neat rows of processed farm goods in professional packaging, fresh produce in the background, quality certification badges visible, clean industrial shelving, professional product photography style, bright warehouse lighting, made-in-Nigeria branding",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to partner with Goshen Farms? We're here to serve you with excellence. Visit our facility, call us, or send a message on WhatsApp for immediate assistance. Our team is ready to discuss your agricultural product needs and provide tailored solutions for your business.",
+      "imagePrompt": "Welcoming entrance of a modern agricultural facility in rural Nigeria, professional signage, well-maintained access road, green landscaping, modern building facade, Nigerian flag flying, clear blue sky, inviting business entrance with parking area, professional commercial photography",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 814 229 4772",
+    "email": "info@goshenfarms.com.ng",
+    "address": "Opposite Obollo International Hotel, Along Obollo-Nsukka Express Way, Obollo Afor, Udenu, Enugu State, Nigeria",
+    "whatsapp": "https://wa.me/2348142294772"
+  }
+}
