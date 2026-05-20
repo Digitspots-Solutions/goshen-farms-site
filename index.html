@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goshen Farms - Cultivating Quality, Delivering Excellence</title>
+    <title>Nna Prince Gas Plant Solutions - Engineering Excellence in Petroleum Processing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #1c2a15;
-            --color-accent: #4d8c15;
-            --color-bg: #EEF6E8;
-            --color-text: #1C2E18;
-            --color-surface: #283f20;
-            --color-secondary-accent: #bd4f1f;
-            --font-display: 'Fraunces', serif;
-            --font-body: 'Source Sans 3', sans-serif;
-            --border-radius: 12px;
+            --color-primary: #081620;
+            --color-accent: #e58b17;
+            --color-bg: #F5F2EE;
+            --color-text: #091829;
+            --color-surface: #0d212c;
+            --color-secondary-accent: #4c909c;
+            --font-display: 'DM Serif Display', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --border-radius: 2px;
         }
 
         * {
@@ -33,13 +33,14 @@
         body {
             font-family: var(--font-body);
             color: var(--color-text);
-            background: var(--color-bg);
+            background-color: var(--color-bg);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
-            font-weight: 700;
+            font-weight: 400;
             line-height: 1.2;
         }
 
@@ -54,32 +55,31 @@
             }
         }
 
-        /* Navigation */
         nav {
-            position: sticky;
+            position: fixed;
             top: 0;
-            background: rgba(238, 246, 232, 0.95);
+            width: 100%;
+            background: rgba(8, 22, 32, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(28, 42, 21, 0.1);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
+        .nav-logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-primary);
+            color: var(--color-accent);
             text-decoration: none;
+            font-weight: 400;
         }
 
         .nav-links {
@@ -89,9 +89,10 @@
         }
 
         .nav-links a {
+            color: #F5F2EE;
             text-decoration: none;
-            color: var(--color-text);
-            font-weight: 600;
+            font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
 
@@ -99,19 +100,17 @@
             color: var(--color-accent);
         }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
-            z-index: 1001;
         }
 
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: #F5F2EE;
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -128,15 +127,14 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
-            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            background: var(--color-primary);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.3);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -156,7 +154,7 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: #F5F2EE;
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -168,7 +166,6 @@
             color: var(--color-accent);
         }
 
-        /* Hero Section */
         #hero {
             position: relative;
             height: 100vh;
@@ -181,44 +178,40 @@
             animation: fadeUp 0.6s ease forwards;
         }
 
-        .hero-image {
+        #hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            z-index: 1;
+            background-image: url('https://images.pexels.com/photos/5884386/pexels-photo-5884386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
         }
 
-        .hero-overlay {
+        #hero::after {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: 2;
+            z-index: -1;
         }
 
         .hero-content {
-            position: relative;
-            z-index: 3;
             max-width: 900px;
-            padding: 0 2rem;
+            padding: 2rem;
+            z-index: 1;
         }
 
         .hero-content h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-        }
-
-        .hero-content .tagline {
-            font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            font-style: italic;
-            opacity: 0.95;
+            color: var(--color-accent);
         }
 
         .hero-content p {
@@ -229,66 +222,73 @@
 
         .cta-button {
             display: inline-block;
+            padding: 1rem 2.5rem;
             background: var(--color-accent);
             color: white;
-            padding: 1rem 2.5rem;
-            border-radius: var(--border-radius);
             text-decoration: none;
+            border-radius: var(--border-radius);
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(77, 140, 21, 0.3);
+            box-shadow: 0 4px 15px rgba(229, 139, 23, 0.3);
         }
 
         .cta-button:hover {
-            background: var(--color-primary);
+            background: #c77812;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(77, 140, 21, 0.4);
+            box-shadow: 0 6px 20px rgba(229, 139, 23, 0.4);
         }
 
-        /* Section Styles */
         section {
             padding: 80px 2rem;
-            animation: fadeUp 0.6s ease forwards;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         section:nth-child(2) {
+            animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.1s;
         }
 
         section:nth-child(3) {
+            animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.2s;
         }
 
         section:nth-child(4) {
+            animation: fadeUp 0.6s ease forwards;
             animation-delay: 0.3s;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        section:nth-child(5) {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.4s;
         }
 
-        .section-title {
-            font-size: 2.5rem;
+        section:nth-child(6) {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        section:nth-child(7) {
+            animation: fadeUp 0.6s ease forwards;
+            animation-delay: 0.6s;
+        }
+
+        h2 {
+            font-size: 2.8rem;
             margin-bottom: 1rem;
             color: var(--color-primary);
-            text-align: center;
         }
 
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
+        .section-intro {
+            font-size: 1.1rem;
+            color: var(--color-secondary-accent);
             margin-bottom: 3rem;
-            color: var(--color-surface);
+            max-width: 800px;
         }
 
-        /* About Section */
-        #about {
-            background: white;
-        }
-
-        .about-split {
+        .about-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -300,18 +300,13 @@
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(28, 42, 21, 0.15);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
         }
 
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .about-content p {
             margin-bottom: 1.5rem;
-        }
-
-        /* Services Section */
-        #services {
-            background: var(--color-bg);
+            line-height: 1.8;
+            color: var(--color-text);
         }
 
         .services-grid {
@@ -325,110 +320,148 @@
             background: white;
             padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(28, 42, 21, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--color-accent);
         }
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(28, 42, 21, 0.15);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
-            color: var(--color-accent);
             margin-bottom: 1rem;
+            color: var(--color-primary);
         }
 
         .service-card p {
+            color: var(--color-text);
             line-height: 1.7;
         }
 
-        .services-image {
-            width: 100%;
-            max-width: 800px;
-            margin: 3rem auto;
-            display: block;
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(28, 42, 21, 0.15);
-        }
-
-        /* Contact Section */
-        #contact {
-            background: white;
-            text-align: center;
-        }
-
-        .contact-info {
-            max-width: 800px;
-            margin: 0 auto 3rem;
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .contact-details {
+        .why-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
 
-        .contact-item {
-            background: var(--color-bg);
+        .why-card {
+            background: var(--color-surface);
+            color: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .why-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(229, 139, 23, 0.3);
+        }
+
+        .why-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .why-card p {
+            line-height: 1.8;
+            color: #F5F2EE;
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .industry-card {
+            background: white;
             padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(28, 42, 21, 0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 3px solid var(--color-secondary-accent);
+        }
+
+        .industry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            border-top-color: var(--color-accent);
+        }
+
+        .industry-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .industry-card p {
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        #contact {
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: 80px 2rem;
+        }
+
+        #contact h2 {
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
         }
 
         .contact-item h3 {
-            color: var(--color-accent);
-            margin-bottom: 1rem;
             font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
         }
 
         .contact-item a {
-            color: var(--color-text);
+            color: white;
             text-decoration: none;
             transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 0.5rem;
         }
 
         .contact-item a:hover {
             color: var(--color-accent);
         }
 
-        .whatsapp-button {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 2rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-        }
-
-        .whatsapp-button:hover {
-            background: #20BA5A;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-        }
-
-        .contact-image {
-            width: 100%;
-            max-width: 900px;
-            margin: 3rem auto 0;
-            display: block;
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(28, 42, 21, 0.15);
-        }
-
-        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -441,24 +474,24 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
+            z-index: 999;
             transition: all 0.3s ease;
             text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
         }
 
-        .whatsapp-float::before {
-            content: "💬";
-            font-size: 28px;
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
         }
 
-        /* Footer */
         footer {
-            background: var(--color-primary);
+            background: var(--color-surface);
             color: white;
             text-align: center;
             padding: 2rem;
@@ -468,17 +501,16 @@
             margin: 0;
         }
 
-        /* Responsive */
         @media (max-width: 1024px) {
-            section {
-                padding: 60px 1.5rem;
-            }
-
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
 
-            .about-split {
+            h2 {
+                font-size: 2.3rem;
+            }
+
+            .about-container {
                 gap: 3rem;
             }
         }
@@ -487,7 +519,7 @@
             .nav-links {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
@@ -500,19 +532,15 @@
                 font-size: 2rem;
             }
 
-            .hero-content .tagline {
-                font-size: 1.2rem;
-            }
-
             .hero-content p {
                 font-size: 1rem;
             }
 
-            .section-title {
+            h2 {
                 font-size: 2rem;
             }
 
-            .about-split {
+            .about-container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
@@ -521,7 +549,9 @@
                 height: 350px;
             }
 
-            .services-grid {
+            .services-grid,
+            .why-cards,
+            .industries-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -530,151 +560,226 @@
             }
 
             .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
                 width: 50px;
                 height: 50px;
+                bottom: 20px;
+                right: 20px;
             }
 
-            .whatsapp-float::before {
-                font-size: 24px;
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-logo {
+                font-size: 1.2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+
+            .cta-button {
+                padding: 0.8rem 1.8rem;
+                font-size: 1rem;
+            }
+
+            .mobile-menu {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#hero" class="logo">Goshen Farms</a>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
+<nav>
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">Nna Prince</a>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li><a href="#industries">Industries</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="https://images.pexels.com/photos/12881023/pexels-photo-12881023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Goshen Farms" class="hero-image">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Goshen Farms</h1>
-            <p class="tagline">Cultivating Quality, Delivering Excellence</p>
-            <p>Welcome to Goshen Farms - Your Trusted Partner in Agricultural Excellence. Located in the heart of Udenu, we are committed to delivering premium agricultural products manufactured with the highest standards of quality and sustainability.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+<div class="mobile-menu">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-choose-us">Why Choose Us</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<section id="hero">
+    <div class="hero-content">
+        <h1>Nna Prince Gas Plant Solutions</h1>
+        <p>Engineering Excellence in Petroleum Processing. Your trusted partner for comprehensive oil and gas plant solutions across Nigeria. From design to implementation, we deliver world-class petroleum processing engineering services with precision and reliability.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-container">
+        <img src="https://images.pexels.com/photos/36106805/pexels-photo-36106805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Nna Prince Gas Plant Solutions" class="about-image">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Nna Prince Gas Plant Solutions, operating as Nna Prince Processing Engineering Limited, is a leading petroleum processing engineering firm based in Udenu, Enugu State. Led by an experienced Petroleum Logistics Manager, we specialize in delivering comprehensive gas plant solutions tailored to the unique demands of Nigeria's oil and gas sector.</p>
+            <p>Our expertise spans the entire lifecycle of petroleum processing facilities - from initial conceptual design and engineering through to installation, commissioning, and ongoing maintenance support. We combine international best practices with deep local knowledge to ensure every project meets the highest safety and operational standards.</p>
+            <p>With a commitment to technical excellence and client satisfaction, we have established ourselves as a reliable partner for businesses seeking professional petroleum engineering solutions in the Southeast and across Nigeria.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-split">
-                <img src="https://images.pexels.com/photos/7046164/pexels-photo-7046164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Goshen Farms" class="about-image">
-                <div class="about-text">
-                    <p>Goshen Farms is a leading agricultural manufacturing enterprise strategically located in Udenu, Enugu State. Situated opposite Obollo International Hotel along the Obollo-Nsukka Express Way, we combine traditional farming wisdom with modern manufacturing techniques to produce exceptional agricultural products.</p>
-                    <p>Our commitment to quality, innovation, and customer satisfaction has positioned us as a trusted name in Nigeria's agricultural sector. We take pride in supporting local communities while maintaining international standards in all our operations.</p>
-                </div>
-            </div>
+<section id="services">
+    <h2>Our Services</h2>
+    <p class="section-intro">Comprehensive petroleum processing engineering solutions for Nigeria's oil and gas industry</p>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Gas Plant Design & Engineering</h3>
+            <p>Comprehensive design services for LPG plants, gas processing facilities, and distribution systems. We create efficient, safe, and compliant solutions tailored to your operational requirements.</p>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">Our Products & Services</h2>
-            <p class="section-subtitle">Premium Agricultural Manufacturing with Excellence</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Quality Processing</h3>
-                    <p>State-of-the-art facilities enable us to maintain strict quality control from farm to finished product, ensuring every item meets the highest standards.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Sustainable Practices</h3>
-                    <p>We are committed to sustainable farming practices that protect our environment while delivering superior products to our customers.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Reliable Distribution</h3>
-                    <p>We serve retailers, distributors, and institutional clients across Nigeria with reliable supply chains and competitive pricing.</p>
-                </div>
-            </div>
-            <img src="https://images.pexels.com/photos/32418799/pexels-photo-32418799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Our Products" class="services-image">
-            <p style="text-align: center; margin-top: 3rem; font-size: 1.1rem; line-height: 1.8;">At Goshen Farms, we specialize in the manufacturing and processing of high-quality agricultural products. Our manufacturing capabilities include processing, packaging, and distribution of agricultural commodities that meet both local and international quality standards.</p>
+        <div class="service-card">
+            <h3>Plant Installation & Commissioning</h3>
+            <p>Professional installation of gas processing equipment, pipelines, and storage facilities. Our experienced team ensures seamless commissioning and startup procedures.</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-info">
-                <p>Ready to partner with Goshen Farms? We're here to serve you with excellence. Visit our facility, call us, or send a message on WhatsApp for immediate assistance. Our team is ready to discuss your agricultural product needs and provide tailored solutions for your business.</p>
-            </div>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p><a href="tel:+2348142294772">+234 814 229 4772</a></p>
-                </div>
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p><a href="mailto:info@goshenfarms.com.ng">info@goshenfarms.com.ng</a></p>
-                </div>
-                <div class="contact-item">
-                    <h3>Address</h3>
-                    <p>Opposite Obollo International Hotel, Along Obollo-Nsukka Express Way, Obollo Afor, Udenu, Enugu State, Nigeria</p>
-                </div>
-            </div>
-            <a href="https://wa.me/2348142294772" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
-            <img src="https://images.pexels.com/photos/36596998/pexels-photo-36596998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Visit Goshen Farms" class="contact-image">
+        <div class="service-card">
+            <h3>Petroleum Logistics Management</h3>
+            <p>Expert logistics coordination for petroleum products transportation, storage optimization, and supply chain management across Nigeria.</p>
         </div>
-    </section>
+        <div class="service-card">
+            <h3>Equipment Procurement & Supply</h3>
+            <p>Sourcing and supply of high-quality gas plant equipment, valves, fittings, and processing machinery from certified international manufacturers.</p>
+        </div>
+        <div class="service-card">
+            <h3>Maintenance & Technical Support</h3>
+            <p>Scheduled maintenance programs, emergency repair services, and technical support to ensure optimal plant performance and safety compliance.</p>
+        </div>
+        <div class="service-card">
+            <h3>Safety Audits & Compliance</h3>
+            <p>Comprehensive safety assessments, regulatory compliance audits, and implementation of international safety standards (DPR, NUPRC, OSHA).</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Goshen Farms. All rights reserved.</p>
-    </footer>
+<section id="why-choose-us">
+    <h2>Why Choose Nna Prince</h2>
+    <p class="section-intro">Excellence, expertise, and reliability in every project we undertake</p>
+    <div class="why-cards">
+        <div class="why-card">
+            <h3>Expert Leadership</h3>
+            <p>Led by a qualified Petroleum Logistics Manager with extensive industry experience and deep understanding of Nigeria's oil and gas regulatory environment.</p>
+        </div>
+        <div class="why-card">
+            <h3>Local Expertise, Global Standards</h3>
+            <p>We combine international engineering best practices with practical knowledge of Nigerian operational realities and regulatory requirements.</p>
+        </div>
+        <div class="why-card">
+            <h3>Comprehensive Solutions</h3>
+            <p>From initial design consultation to long-term maintenance support, we provide end-to-end petroleum processing engineering services.</p>
+        </div>
+        <div class="why-card">
+            <h3>Safety First Culture</h3>
+            <p>Uncompromising commitment to safety standards, environmental protection, and regulatory compliance in every project we undertake.</p>
+        </div>
+        <div class="why-card">
+            <h3>Proven Track Record</h3>
+            <p>Successful delivery of gas plant projects across Nigeria, with satisfied clients in commercial, industrial, and distribution sectors.</p>
+        </div>
+        <div class="why-card">
+            <h3>Strategic Location</h3>
+            <p>Conveniently located in Udenu, Enugu State, providing easy access to major oil and gas operations across the Southeast and beyond.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2348142294772" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp"></a>
+<section id="industries">
+    <h2>Industries We Serve</h2>
+    <p class="section-intro">Delivering specialized petroleum processing solutions across diverse sectors</p>
+    <div class="industries-grid">
+        <div class="industry-card">
+            <h3>LPG Distribution Companies</h3>
+            <p>Gas plant design, installation, and management solutions for liquefied petroleum gas distributors and retailers.</p>
+        </div>
+        <div class="industry-card">
+            <h3>Manufacturing & Industrial</h3>
+            <p>Petroleum processing systems for factories, industrial plants, and heavy manufacturing facilities requiring reliable gas supply.</p>
+        </div>
+        <div class="industry-card">
+            <h3>Commercial & Hospitality</h3>
+            <p>Gas infrastructure solutions for hotels, restaurants, shopping complexes, and commercial establishments.</p>
+        </div>
+        <div class="industry-card">
+            <h3>Oil & Gas Operators</h3>
+            <p>Supporting services for upstream and downstream petroleum operations, including logistics and technical engineering.</p>
+        </div>
+        <div class="industry-card">
+            <h3>Real Estate Developers</h3>
+            <p>Reticulated gas systems and centralized gas solutions for residential estates and property developments.</p>
+        </div>
+        <div class="industry-card">
+            <h3>Government & Institutions</h3>
+            <p>Petroleum infrastructure projects for government facilities, hospitals, educational institutions, and public sector organizations.</p>
+        </div>
+    </div>
+</section>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to discuss your petroleum processing engineering needs? Nna Prince Gas Plant Solutions is here to provide expert guidance and professional solutions for your oil and gas projects.</p>
+    <div class="contact-details">
+        <div class="contact-item">
+            <h3>Visit Our Office</h3>
+            <p>Opposite Obollo International Hotel<br>Along Obollo-Nsukka Express Way<br>Obollo Afor, Udenu, Enugu State, Nigeria</p>
+        </div>
+        <div class="contact-item">
+            <h3>Call or WhatsApp</h3>
+            <a href="tel:+2348142294772">+234 814 229 4772</a>
+            <a href="mailto:info@nnaprince.com">info@nnaprince.com</a>
+        </div>
+        <div class="contact-item">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed (Emergency services available)</p>
+        </div>
+    </div>
+    <p style="margin-top: 3rem;">Whether you need a complete gas plant installation, equipment procurement, or technical consultation, our team of petroleum engineering professionals is ready to deliver solutions that meet international standards while addressing your specific operational requirements.</p>
+    <a href="tel:+2348142294772" class="cta-button" style="margin-top: 2rem;">Contact Us Today</a>
+</section>
 
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
+<a href="https://wa.me/2348142294772" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.203 1.393 1.38-5.137-0.32-0.524c-1.32-2.16-2.013-4.643-2.013-7.037 0-7.467 6.067-13.533 13.533-13.533s13.533 6.067 13.533 13.533c0 7.467-6.067 13.467-13.533 13.467zM21.867 18.267c-0.397-0.2-2.36-1.163-2.727-1.297s-0.632-0.2-0.898 0.2c-0.267 0.397-1.030 1.297-1.263 1.563s-0.465 0.297-0.862 0.1c-0.397-0.2-1.677-0.618-3.193-1.972-1.18-1.053-1.977-2.353-2.210-2.75s-0.023-0.612 0.175-0.81c0.18-0.178 0.397-0.465 0.595-0.697s0.265-0.397 0.397-0.663c0.133-0.267 0.067-0.5-0.033-0.697s-0.898-2.163-1.230-2.963c-0.323-0.778-0.652-0.672-0.898-0.685-0.232-0.012-0.498-0.015-0.763-0.015s-0.697 0.1-1.063 0.5c-0.365 0.397-1.397 1.363-1.397 3.327s1.430 3.86 1.627 4.127c0.197 0.265 2.762 4.260 6.713 5.963 0.937 0.403 1.67 0.645 2.24 0.827 0.943 0.297 1.8 0.255 2.478 0.155 0.755-0.112 2.327-0.952 2.655-1.87s0.328-1.705 0.230-1.87c-0.1-0.165-0.365-0.265-0.763-0.465z"/>
+    </svg>
+</a>
+
+<footer>
+    <p>&copy; 2024 Nna Prince Gas Plant Solutions. All rights reserved.</p>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
             });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
