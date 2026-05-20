@@ -1,41 +1,55 @@
 {
-  "businessName": "Goshen Farms",
-  "industry": "Agricultural Manufacturing",
-  "tone": "professional and trustworthy",
-  "tagline": "Cultivating Quality, Delivering Excellence",
+  "businessName": "Nna Prince Gas Plant Solutions",
+  "industry": "Oil & Gas Engineering",
+  "tone": "professional, technical, authoritative",
+  "tagline": "Engineering Excellence in Petroleum Processing",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "Welcome to Goshen Farms - Your Trusted Partner in Agricultural Excellence. Located in the heart of Udenu, we are committed to delivering premium agricultural products manufactured with the highest standards of quality and sustainability.",
-      "imagePrompt": "Photorealistic aerial view of a modern agricultural farm in rural Nigeria, lush green farmland stretching to the horizon, organized crop rows, modern processing facilities in the background, golden hour lighting, vibrant green vegetation, red earth paths, professional agricultural setting in Enugu State Nigeria",
+      "name": "Hero Section",
+      "copy": "Nna Prince Gas Plant Solutions - Engineering Excellence in Petroleum Processing. Your trusted partner for comprehensive oil and gas plant solutions across Nigeria. From design to implementation, we deliver world-class petroleum processing engineering services with precision and reliability.",
+      "imagePrompt": "Professional oil and gas processing plant facility in Nigeria at golden hour, modern industrial equipment, steel pipelines and processing units, safety standards visible, clean industrial environment, photorealistic, high-quality corporate photography style",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Goshen Farms is a leading agricultural manufacturing enterprise strategically located in Udenu, Enugu State. Situated opposite Obollo International Hotel along the Obollo-Nsukka Express Way, we combine traditional farming wisdom with modern manufacturing techniques to produce exceptional agricultural products. Our commitment to quality, innovation, and customer satisfaction has positioned us as a trusted name in Nigeria's agricultural sector. We take pride in supporting local communities while maintaining international standards in all our operations.",
-      "imagePrompt": "Professional interior shot of a modern agricultural processing facility in Nigeria, clean stainless steel equipment, workers in white protective gear and hairnets sorting fresh produce, quality control stations, bright natural lighting through large windows, organized and hygienic environment, Nigerian agricultural workers engaged in careful production",
+      "copy": "Nna Prince Gas Plant Solutions, operating as Nna Prince Processing Engineering Limited, is a leading petroleum processing engineering firm based in Udenu, Enugu State. Led by an experienced Petroleum Logistics Manager, we specialize in delivering comprehensive gas plant solutions tailored to the unique demands of Nigeria's oil and gas sector.\n\nOur expertise spans the entire lifecycle of petroleum processing facilities - from initial conceptual design and engineering through to installation, commissioning, and ongoing maintenance support. We combine international best practices with deep local knowledge to ensure every project meets the highest safety and operational standards.\n\nWith a commitment to technical excellence and client satisfaction, we have established ourselves as a reliable partner for businesses seeking professional petroleum engineering solutions in the Southeast and across Nigeria.",
+      "imagePrompt": "Modern Nigerian oil and gas engineering office interior, technical drawings and safety certifications on walls, professional engineering team in PPE gear reviewing plant schematics, natural lighting, corporate professional photography",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Products & Services",
-      "copy": "At Goshen Farms, we specialize in the manufacturing and processing of high-quality agricultural products. Our state-of-the-art facilities enable us to maintain strict quality control from farm to finished product. We serve retailers, distributors, and institutional clients across Nigeria with reliable supply chains and competitive pricing. Our manufacturing capabilities include processing, packaging, and distribution of agricultural commodities that meet both local and international quality standards. We are committed to sustainable farming practices that protect our environment while delivering superior products to our customers.",
-      "imagePrompt": "Vibrant display of packaged agricultural products in a modern Nigerian facility, neat rows of processed farm goods in professional packaging, fresh produce in the background, quality certification badges visible, clean industrial shelving, professional product photography style, bright warehouse lighting, made-in-Nigeria branding",
+      "name": "Our Services",
+      "copy": "**Gas Plant Design & Engineering**\nComprehensive design services for LPG plants, gas processing facilities, and distribution systems. We create efficient, safe, and compliant solutions tailored to your operational requirements.\n\n**Plant Installation & Commissioning**\nProfessional installation of gas processing equipment, pipelines, and storage facilities. Our experienced team ensures seamless commissioning and startup procedures.\n\n**Petroleum Logistics Management**\nExpert logistics coordination for petroleum products transportation, storage optimization, and supply chain management across Nigeria.\n\n**Equipment Procurement & Supply**\nSourcing and supply of high-quality gas plant equipment, valves, fittings, and processing machinery from certified international manufacturers.\n\n**Maintenance & Technical Support**\nScheduled maintenance programs, emergency repair services, and technical support to ensure optimal plant performance and safety compliance.\n\n**Safety Audits & Compliance**\nComprehensive safety assessments, regulatory compliance audits, and implementation of international safety standards (DPR, NUPRC, OSHA).",
+      "imagePrompt": "Collage of Nigerian oil and gas operations: workers in safety gear installing pipeline equipment, gas storage tanks against blue sky, control room with monitoring systems, maintenance crew inspecting equipment, professional industrial photography, bright and safe working environment",
+      "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Nna Prince",
+      "copy": "**Expert Leadership**\nLed by a qualified Petroleum Logistics Manager with extensive industry experience and deep understanding of Nigeria's oil and gas regulatory environment.\n\n**Local Expertise, Global Standards**\nWe combine international engineering best practices with practical knowledge of Nigerian operational realities and regulatory requirements.\n\n**Comprehensive Solutions**\nFrom initial design consultation to long-term maintenance support, we provide end-to-end petroleum processing engineering services.\n\n**Safety First Culture**\nUncompromising commitment to safety standards, environmental protection, and regulatory compliance in every project we undertake.\n\n**Proven Track Record**\nSuccessful delivery of gas plant projects across Nigeria, with satisfied clients in commercial, industrial, and distribution sectors.\n\n**Strategic Location**\nConveniently located in Udenu, Enugu State, providing easy access to major oil and gas operations across the Southeast and beyond.",
+      "imagePrompt": "Professional Nigerian petroleum engineer in full safety PPE inspecting modern gas processing equipment, quality control check, blue sky background, confident and competent pose, high-quality corporate photography, emphasis on professionalism and safety",
+      "layout": "cards"
+    },
+    {
+      "id": "industries",
+      "name": "Industries We Serve",
+      "copy": "**LPG Distribution Companies**\nGas plant design, installation, and management solutions for liquefied petroleum gas distributors and retailers.\n\n**Manufacturing & Industrial**\nPetroleum processing systems for factories, industrial plants, and heavy manufacturing facilities requiring reliable gas supply.\n\n**Commercial & Hospitality**\nGas infrastructure solutions for hotels, restaurants, shopping complexes, and commercial establishments.\n\n**Oil & Gas Operators**\nSupporting services for upstream and downstream petroleum operations, including logistics and technical engineering.\n\n**Real Estate Developers**\nReticulated gas systems and centralized gas solutions for residential estates and property developments.\n\n**Government & Institutions**\nPetroleum infrastructure projects for government facilities, hospitals, educational institutions, and public sector organizations.",
+      "imagePrompt": "Wide view of diverse Nigerian commercial and industrial facilities: modern hotel building, factory with smokestacks, gas station, residential estate, showcasing variety of petroleum infrastructure applications, aerial photography style, professional and comprehensive",
       "layout": "grid"
     },
     {
       "id": "contact",
-      "name": "Get In Touch",
-      "copy": "Ready to partner with Goshen Farms? We're here to serve you with excellence. Visit our facility, call us, or send a message on WhatsApp for immediate assistance. Our team is ready to discuss your agricultural product needs and provide tailored solutions for your business.",
-      "imagePrompt": "Welcoming entrance of a modern agricultural facility in rural Nigeria, professional signage, well-maintained access road, green landscaping, modern building facade, Nigerian flag flying, clear blue sky, inviting business entrance with parking area, professional commercial photography",
+      "name": "Contact Us",
+      "copy": "Ready to discuss your petroleum processing engineering needs? Nna Prince Gas Plant Solutions is here to provide expert guidance and professional solutions for your oil and gas projects.\n\n**Visit Our Office:**\nOpposite Obollo International Hotel\nAlong Obollo-Nsukka Express Way\nObollo Afor, Udenu, Enugu State, Nigeria\n\n**Call or WhatsApp:**\n+234 814 229 4772\n\n**Business Hours:**\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\nSunday: Closed (Emergency services available)\n\nWhether you need a complete gas plant installation, equipment procurement, or technical consultation, our team of petroleum engineering professionals is ready to deliver solutions that meet international standards while addressing your specific operational requirements.\n\nContact us today for a professional assessment of your project needs.",
+      "imagePrompt": "Professional Nigerian business office exterior, modern building with clear signage, well-maintained commercial street in Enugu State, blue sky, welcoming entrance, parked vehicles, photorealistic daytime photography, professional and accessible appearance",
       "layout": "centered"
     }
   ],
   "contact": {
     "phone": "+234 814 229 4772",
-    "email": "info@goshenfarms.com.ng",
+    "email": "info@nnaprince.com",
     "address": "Opposite Obollo International Hotel, Along Obollo-Nsukka Express Way, Obollo Afor, Udenu, Enugu State, Nigeria",
     "whatsapp": "https://wa.me/2348142294772"
   }
